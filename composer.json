@@ -10,7 +10,8 @@
         "josegonzalez/dotenv": "^2.1",
         "koriym/query-locator": "^1.3",
         "ray/aura-sql-module": "^1.6",
-        "koriym/http-constants": "^1.0"
+        "koriym/http-constants": "^1.0",
+        "ramsey/uuid": "^3.6"
     },
     "require-dev": {
         "bear/qatools": "^1.4.2",

@@ -27,7 +27,7 @@ class AppModule extends AbstractModule
         $this->install(new QueryLocatorModule($rootDir . '/var/sql'));
 
         // Databasde
-        $this->install(new AuraSqlModule($_ENV['db_dsn']),$_ENV['db_user'], $_ENV['db_password']);
+        $this->install(new AuraSqlModule($_ENV['db_dsn'],$_ENV['db_user'], $_ENV['db_password']));
 
     }
 }
