@@ -1,28 +1,21 @@
 # Polidog.Blog
 
+BEAR Sunday blog sample.
+
 ## Installation
 
-    composer install
+```
+$ composer install
+$ composer phinx-migrate
+```
 
 ## Usage
 
-### Run server
+### Create User
 
-    composer serve
-
-### Console
-
-    composer web get /
-    composer api get /
-
-### QA
-
-    composer test       // phpunit
-    composer coverage   // test coverate
-    composer cs         // lint
-    composer cs-fix     // lint fix
-    vendor/bin/phptest  // test + cs
-    vendor/bin/phpbuild // phptest + doc + qa
+```
+$ php bootstrap/api.php post "/user?email=hoge@gmail.com&password=your-password"
+```
 
 
 ## Requirements
