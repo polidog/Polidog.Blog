@@ -27,9 +27,9 @@ class User extends ResourceObject
         return $this;
     }
 
-    public function onPost(string $email, $password) : ResourceObject
+    public function onPost(string $email, string $password) : ResourceObject
     {
-        $id = Uuid::uuid4();
+        $id = Uuid::uuid4()->toString();
 
         $this->pdo->perform($this->query['user_insert'],[
             'id' => $id,
